@@ -1,0 +1,19 @@
+{
+  "name": "fleshel.tech",
+  "version": "0.0.1",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleshel/fleshel.tech.git"
+  },
+  "author": "Jason Fleshel",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/fleshel/fleshel.tech/issues"
+  },
+  "homepage": "https://github.com/fleshel/fleshel.tech#readme"
+}

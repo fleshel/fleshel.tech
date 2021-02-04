@@ -13,7 +13,8 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!' })
+	let homepage = `Jason Fleshel's Homepage`;
+  	res.render('index', { title: homepage, message: homepage })
 })
 const server = http.createServer(app).listen(_PORT_, () => {
 	console.log('server listening on port ' + _PORT_);

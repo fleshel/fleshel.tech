@@ -1,5 +1,13 @@
 html
-  head
-    title= title
-  body
-    h1= message
+	head
+		link(rel="stylesheet" href="style.css")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title= title
+	body
+		section.section
+			.container
+				h1.title= message
+				p.subtitle
+				| An example website with 
+				strong Bulma
+				| !

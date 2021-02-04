@@ -7,9 +7,9 @@ const app = express();
 const _PORT_ = 8888;
 
 app.get('/', (resquest, response, next) => {
-	res.send('test');
+	response.send('test');
 });
 
-const server = http.createServer(app).listen(8080, () => {
-	console.log('server lisetening on port 8080');
+const server = http.createServer(app).listen(8888, () => {
+	console.log('server lisetening on port 8888');
 });

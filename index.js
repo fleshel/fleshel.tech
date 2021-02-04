@@ -6,10 +6,15 @@ const app = express();
 
 const _PORT_ = 8888;
 
-app.get('/', (resquest, response, next) => {
-	response.send('test');
-});
+app.use(express.static('static'));
+app.set('view engine', 'pug');
+//use pug to render from ./views
 
-const server = http.createServer(app).listen(8888, () => {
-	console.log('server lisetening on port 8888');
+app.set('views', './views');
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+})
+const server = http.createServer(app).listen(_PORT_, () => {
+	console.log('server listening on port ' + _PORT_);
 });

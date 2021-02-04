@@ -10,6 +10,6 @@ app.get('/', (resquest, response, next) => {
 	res.send('test');
 });
 
-const server = http.createServer(app).listen(80, () => {
-	console.log('server lisetening on port 80');
+const server = http.createServer(app).listen(8080, () => {
+	console.log('server lisetening on port 8080');
 });

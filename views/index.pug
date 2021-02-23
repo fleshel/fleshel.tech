@@ -2,12 +2,50 @@ html
 	head
 		link(rel="stylesheet" href="style.css")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
+		script(src="https://kit.fontawesome.com/004be9f7a6.js" crossorigin="anonymous")
 		title= title
 	body
 		section.section
 			.container
-				h1.title= message
-				p.subtitle
-				| An example website with 
-				strong Bulma
-				| !
+				.columns
+					.column.is-half
+						h1.is-size-1.is-size-4-mobile.j-header= message
+						h2.is-size-5.is-size-7-mobile The source code for this website is available&nbsp;
+							a(href="https://github.com/fleshel/fleshel.tech" target="_blank") here.
+					.column.is-half.is-align-content-right
+						figure.image.is-128x128
+							img#logo(src="./FFv2.png")
+		section.section
+			.container
+				.columns
+					.column.is-three-quarters
+						h1.is-size-2.is-size-5-mobile.j-header Background
+						h2.is-size-5.is-size-7-mobile I am a junior in the College of Science and Technology
+							|&nbsp;at Temple University in Philadelphia, Pennsylvania. I'm currently pursuing a Bachelor's of Science degree in the field of Mathematics & Computer Science.
+						h2.is-size-5.is-size-7-mobile Additionally, I am minoring in Finance at the Fox School of Business at Temple University.
+					.column
+						nav.panel.is-info
+							p.panel-heading Contact Me
+							.panel-block
+								a.panel-block.is-active(href="mailto:jfleshel@temple.edu")
+									span.panel-icon
+										i.far.fa-envelope
+									| jfleshel@temple.edu
+							.panel-block
+								a.panel-block.is-active(href="mailto:jason@fleshel.tech")
+									span.panel-icon
+										i.fas.fa-server
+									| jason@fleshel.tech
+									
+
+		section.section
+			.container
+				h1.is-size-2.is-size-5-mobile.j-header My Interests
+				h2.is-size-5.is-size-7-mobile I have been enthusiastic about math since I was a child and I fell in
+					| &nbsp;love with computer programming in high school.
+				h2.is-size-5.is-size-7-mobile Once I arrived at Temple, I decided to major in Computer Science since
+					| &nbsp;coding came naturally to me, however I did not find it suited my interests so I decided
+					| to change my major to Computer Science & Mathematics.
+				h2.is-size-5.is-size-7-mobile While here I have fallen in love with finance and economics.
+					| &nbsp; My belief is that CS, math, and finance all combine in unison and 
+					| I am confident that this is what I would like to spend the rest of my life doing.

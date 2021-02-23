@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@200&display=swap');
+ @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
 
  * {
 	font-family: 'Montserrat', sans-serif;
  }
 
 body {
-	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.j-header {
+	font-weight: 400;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+#logo {
+	width: 256px;
 }

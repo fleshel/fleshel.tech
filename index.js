@@ -35,8 +35,8 @@ if(env == 'dev')
 		cert: fs.readFileSync('cert.pem')
 	};
 
-	const server = https.createServer(options, app).listen(443, () => {
-		console.log('server listening on port ' + 443);
+	const server = https.createServer(options, app).listen(_PORT_, () => {
+		console.log('server listening on port ' + _PORT_);
 	});
 
 }

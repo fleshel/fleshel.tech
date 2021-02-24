@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 
 const env = require('./api/arg.js')();
 
-if(env == 'dev')
+if(env == '-dev')
 {
 	const server = http.createServer(app).listen(_PORT_, () => {
 		console.log('server listening on port ' + _PORT_);

@@ -19,9 +19,9 @@ app.get('/', function (req, res) {
   	res.render('index', { title: homepage, message: homepage })
 })
 
-const env = require('./api/arg.js')();
+const env = process.env.NODE_ENV || 'dev';
 
-if(env == '-dev')
+if(env == 'dev')
 {
 	const server = http.createServer(app).listen(_PORT_, () => {
 		console.log('server listening on port ' + _PORT_);
